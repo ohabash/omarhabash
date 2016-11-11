@@ -1,0 +1,149 @@
+
+
+
+
+
+<!-- <div class="alt-open">Press <span>alt</span> to open menu. Use arrows to browse to projects</div> -->
+
+
+
+<!-- <div class='title00 '> -->
+<div class='title00 db p0 dr9 gone'>projects <span class="currentHref hide"></span></div>
+  
+
+<section class="center-slick slider" ng-controller="projectListController">
+
+  <!-- Project Item Template-->
+
+
+  <!-- item -->
+  <div class="the-first project-item gone">
+    <!-- <div>Use arrows to browse projects; Or press <span>alt</span> to open menu. </div> -->
+    <div>Press <span>⬅</span> for<br>Main Navigation</div>
+  </div>
+
+  <!-- item -->
+  <a href="https://google1.com" title="Follow Up Letter" target="_blank" class="project-item">
+    <img class="img-responsive" src="assets/img/projects/project_1.png">
+  </a>
+
+  <!-- item -->
+  <a href="https://google2.com" title="Icon Finder" target="_blank" class="project-item">
+    <img class="img-responsive" src="assets/img/projects/project_2.png">
+  </a>
+
+  <!-- item -->
+  <a href="https://google3.com" title="OS-X (jQuery)" target="_blank" class="project-item">
+    <img class="img-responsive" src="assets/img/projects/project_3.png">
+  </a>
+
+  <!-- item -->
+  <a href="https://google4.com" title="Women of Faith" target="_blank" class="project-item">
+    <img class="img-responsive" src="assets/img/projects/project_4.png">
+  </a>
+
+  <!-- item -->
+  <a href="https://google5.com" title="Promote Love" target="_blank" class="project-item">
+    <img class="img-responsive" src="assets/img/projects/project_5.png">
+  </a>
+
+  <!-- item -->
+  <a href="https://google6.com" title="Terminal Notifications" target="_blank" class="project-item">
+    <img class="img-responsive" src="assets/img/projects/project_6.png">
+  </a>
+
+  <!-- item -->
+  <a href="https://google7.com" title="Follow Up Letter" target="_blank" class="project-item">
+    <img class="img-responsive" src="assets/img/projects/project_1.png">
+  </a>
+
+  <!-- item -->
+  <a href="https://google8.com" title="Icon Finder" target="_blank" class="project-item">
+    <img class="img-responsive" src="assets/img/projects/project_2.png">
+  </a>
+
+  <!-- item -->
+  <a href="https://google9.com" title="OS-X (jQuery)" target="_blank" class="project-item">
+    <img class="img-responsive" src="assets/img/projects/project_3.png">
+  </a>
+
+      
+      <!-- <a ng-repeat="project in projects" ng-if="array.legnth > 0" href="{{project.link}}" title="{{project.title}}" target="_blank" class="project-item">
+        <img class="img-responsive" src="{{project.img}}">
+      </a> -->
+  
+  
+</section>
+
+  <div class="nav-buttons gone">
+    <div class="currentHref bottom1"><div class="yellow"></div></div>
+    <div class="inner-arrows">
+      <div class="leftarrow"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+      <div class="rightarrow"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+    </div>
+  </div>
+
+
+
+
+
+<script type="text/javascript">
+addAlert ("use ➡ right arrow to browse projects");
+// carousel
+$('.center-slick').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 5,
+  cssEase: 'ease',
+  infinite: false,
+
+  responsive: [
+    {
+      breakpoint: 1600,
+      settings: {
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+scrollable = true;
+
+$('.leftarrow').click(function() {
+    $('.center-slick').slick("slickPrev");
+    getCurrentInfo();
+});
+
+$('.rightarrow').click(function() {
+    $('.center-slick').slick("slickNext");
+    getCurrentInfo();
+});
+
+function getCurrentInfo() {
+   var title = $(".slick-current").attr('title');
+   var href = $(".slick-current").attr('href');
+   $('.currentHref, .bottom1').html(title+"<small><div class=\"yellow\"><a href=\""+href+"\" target=\"_blank\">"+href+"</a></div></small>");
+   $('.currentHref').removeClass('hide');
+}; 
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+

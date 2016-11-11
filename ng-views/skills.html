@@ -1,0 +1,31 @@
+<link href="assets/dist/css/skills.css" rel="stylesheet">
+<div class='title00 db p0 gone'>Skills</div>
+
+<div id="skills" class="fadeIn dr8 animated" ng-controller="skillListController">
+	<div class="closeSkills">
+		<!-- <i class="fa fa-times-circle"></i> -->
+	</div>
+	<div class="p1em"></div>
+	<div class="skill-icons clearfix dr3 animated zoomIn d3 pt0">
+
+		<!-- Item Template-->
+		<div class="col-sm-2 col-xs-3 skill-item" ng-repeat="skill in skills">
+			<div class="skill-wrap">
+				<img src="{{skill.img}}" alt="">
+				<p class="text-center gone">{{skill.name}}</p>
+			</div>
+		</div>
+
+		
+	</div>
+
+</div>
+
+
+
+<style>
+#background{
+}
+</style>
+
+

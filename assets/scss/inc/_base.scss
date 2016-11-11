@@ -1,0 +1,263 @@
+body, html {
+    background: rgba(0, 0, 0, 0) !important;
+    overflow:hidden;
+    position: fixed;
+    width: 100%;
+
+}
+body{
+	font-size:17px;
+	@extend .OpenS;
+    background:#000 !important;
+}
+
+h2{
+	font-size: 4em;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+key{
+    background:#fff;
+    color:#333;
+    font-weight: bold;
+    font-family: monospace;
+    padding:3px;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 47px;
+    margin-bottom: 0.3em;
+    text-transform: uppercase;
+    position: relative;
+    text-align:center;
+    @extend .mt0;
+    &:after, &:before{
+    	// also default
+    	content: "]";
+    	font-size:1.2em;
+    	padding-left: 0.2em;
+    	opacity: 0.5;
+    	position: relative;
+    	top: 0.05em;
+    	@include ani(0, slideInRight, 1s);
+			display: none; // see main.js
+			// @include bp(L-phone){
+			// 	display: inline-block !important;
+			// }
+    }
+    &:before{
+    	@include ani(0, slideInLeft, 1s);
+    	padding-right: 0.2em;
+    	content: "[";
+    }
+}
+
+h3.works:before,
+h3.works:after{
+	display: inline-block !important;
+}
+
+p{
+	-webkit-font-smoothing: antialiased;
+	font-weight: 200;
+    // letter-spacing: 1px;
+    line-height: 1.6em;
+}
+
+p.f{
+	text-transform: uppercase;
+	@extend .OpenS;
+	letter-spacing: 3px;
+	font-weight: bold;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+
+blockquote {
+	-webkit-font-smoothing: antialiased;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+		font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+		.author1{
+			font-family: 'open sans';
+	    font-style: normal;
+	    font-size: 0.5em;
+	    text-transform: capitalize;
+	    opacity: 0.7;
+		}
+}
+
+blockquote::before {
+    content: open-quote;
+    font-size: 3em;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    font-family: "open-sans";
+    opacity: 0.3;
+}
+blockquote::after {
+	content: close-quote;
+	font-size: 3em;
+	position: absolute;
+	bottom: 16px;
+	right: 36px;
+	font-family: "open-sans";
+	opacity: 0.3;
+}
+
+.details{
+	@extend .OpenS;
+	font-size: 0.8em;
+    letter-spacing: 0.05em;
+    font-weight: 100;
+    opacity: 0.8;
+}
+
+.clearfix1{
+		// min-height:80vh;
+		max-width: 1440px;
+		margin:0 auto;
+}
+
+p.shine {
+    text-align: right;
+    padding-right: 2em;
+    font-weight: bold;
+		a{
+			color: #fff;
+		}
+}
+
+.text-center{
+	@extend .m0;
+	a{
+		text-align: center;
+		display: block;
+		padding-top: 1em;
+	}
+}
+
+.oh{overflow: hidden;}
+
+
+
+
+
+
+
+
+
+.title0 {
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    color: #fff;
+    text-shadow: 1px 4px 29px rgba(0, 0, 0, 0.64);
+    padding-left: 3.1em;
+    position: fixed;
+    z-index: 9;
+    font-size: 1.5em;
+    top: 7px;
+    left: 6%;
+    display: none;
+    -webkit-font-smoothing: antialiased;
+    @include ani(0, slideInDown, 0.8s);
+    @include bp(L-phone){
+        display: none !important;
+    }
+    span {
+        padding-left: 1em;
+        animation-duration: 0.2s;
+        animation-fill-mode: both;
+        animation-name: fadeInUp;
+        -webkit-font-smoothing: antialiased;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        font-weight: 100;
+        border-left: 2px solid rgb(85, 187, 85);
+    }
+}
+
+iframe{
+    width: 100%;
+    border: 0;
+}
+
+iframe svg{display: none !important}
+
+.title00{
+    @extend .title0;
+    left: 10px;
+    top: 0;
+    display: inline-block;
+    padding: 0;
+    font-weight: 100;
+    span{
+        display: inline-block;
+        max-height: 1.7em;
+        margin-top: 12px;
+    }
+    a,small{
+        display: none !important;
+    }
+    @include bp(L-phone){
+        padding: 5px;
+        margin-top: -13px;
+        font-size: 0.8em;
+        top:0;
+    }
+}
+
+.smoke {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    canvas {
+        height: 100% !important;
+    }
+}
+
+.st-content canvas{
+    z-index:-1;
+}
+
+.blur{
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -ms-filter: blur(10px);
+    -o-filter: blur(10px);
+    filter: blur(10px);
+    margin: -10px;
+    -webkit-transform: scale(1.05);
+}
+
+.hamb {
+    background: #fff;
+    position: absolute;
+    top: 40%;
+    padding: 1em;
+    z-index: 999999;
+    color: $dark;
+    opacity:1;
+    @include ease(.7s);
+    button{
+        opacity: 1 !important;
+    }
+}
+.gone {
+    @include ease(.7s);
+}
+
+.st-menu-open .gone {
+    opacity: 0 !important;
+    button{
+    }
+}

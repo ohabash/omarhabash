@@ -1,0 +1,122 @@
+/*========= Skills =========*/
+  .st-container{
+    /*background: url("../../img/5.jpg");*/
+/*    -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -ms-filter: blur(10px);
+  -o-filter: blur(10px);
+  filter: blur(10px);
+  margin: -10px;*/
+  /*-webkit-transform: scale(1.05);*/
+  }
+  img#background{
+  opacity: 1 !important;
+  /*background: url("../../img/5.jpg") !important;*/
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+        background-size: 100vw 100vh;
+    background-position: center;
+}
+
+.st-menu-open img#background{
+  opacity: 0 !important;
+}
+
+.title00{
+  display: block !important;
+}
+
+
+#skills {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  /*background: url('../img/dark-blur.jpg')fixed;*/
+  background-size: cover;
+  z-index: 7;
+  color: #fff;
+  text-align: center;
+}
+
+.closeSkills {
+  position: absolute;
+  right: 7px;
+}
+
+.closeSkills i {
+  cursor: pointer;
+  font-size: 2em;
+  padding: 0.5em;
+  opacity: 0.6;
+}
+
+.closeSkills i:hover {
+  opacity: 1;
+}
+
+.skill-item p {
+  color: #fff;
+  font-size: 0.85em;
+  padding-top: 0.5em;
+  text-shadow: 1px 1px 4px #000;
+  height: 1em;
+}
+
+.skill-item i {
+  font-size: 8em;
+  opacity: 0.5;
+}
+
+.skill-item img {
+    width: auto;
+    margin: 0 auto;
+    height: 46%;
+    margin-top: 10%;
+}
+
+.skill-icons {
+    max-width: 75%;
+    margin: 0 auto;
+    /*padding-top: 4em;*/
+    max-height: 96vh;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+
+}
+
+.skill-wrap {
+    height: 11.2em;
+    /*margin-bottom: 1em;*/
+    /*display: table-cell;*/
+    /*vertical-align: middle;*/
+}
+
+@media (max-width: 726px) {
+  .skill-wrap {
+    height: 5.2em;
+  }
+  .skill-wrap p {
+    font-size: 0.65em;
+  }
+  .skill-icons{
+    max-width: 95%;
+  }
+  .skill-icons{
+    padding-top: 0.8em;
+  }
+}
+
+
+.skill-wrap:hover {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 11px;
+}
+
+
+/*========= Skills =========*/

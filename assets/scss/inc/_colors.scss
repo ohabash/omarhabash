@@ -1,0 +1,24 @@
+
+$yellow: #fab104;
+$red: red;
+$green: #4baa4b;
+
+	
+.yellow, yellow{
+    color: $yellow !important;
+    a{
+    	color: $yellow;
+    }
+}
+.red, red{
+    color: $red !important;
+    a{
+    	color: $red;
+    }
+}
+.green, green{
+    color: $green !important;
+    a{
+    	color: $green;
+    }
+}

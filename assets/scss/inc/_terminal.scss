@@ -1,0 +1,70 @@
+
+
+#terminal span {
+    // font-family: monospace;
+    display: block;
+    font-size: 1.4em;
+    letter-spacing:2px;
+    @include ani(1s, fadeIn, 0.5s);
+    @include delay(0.1s);
+    @include bp(M-desktop){
+        font-size: 1.4em;
+    }
+}
+
+#terminal span:first-child:after {
+    content: " ";
+}
+
+#terminal span:last-child:after {
+  content: "_";
+  opacity: 0;
+  animation: cursor 1s infinite;
+}
+
+// .cursor{
+//   animation: cursor 1s infinite;
+// }
+
+#terminal {
+    box-sizing: border-box;
+    display: table-cell;
+    vertical-align: middle;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+    font-size: 0.5em;
+    padding: 1em;
+    text-shadow: 0 0px 22px rgba(0, 0, 0, 0.96);
+    text-align: right;
+    z-index: 99;
+    .mark, mark {
+        padding: 0;
+        background-color: #FF4E4E;
+        color: #fff;
+        padding-bottom: 0.2em;
+    }
+}
+
+.fadeOut {
+    -webkit-animation-name: fadeOut !important;
+    animation-name: fadeOut !important;
+}
+
+
+.btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    max-width: 350px;
+    margin: 0 auto;
+    border-radius: 0;
+    box-shadow: 0 0 0;
+    border: 0;
+    background: lightslategrey;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}

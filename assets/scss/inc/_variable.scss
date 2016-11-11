@@ -1,0 +1,21 @@
+$main-dAccent: #CC5B5B;
+$dark: #1c323a;
+$green: #4baa4b;
+$yellow: #fab104;
+$red: #e64e0d;
+
+.blue-grad {
+    background: -moz-linear-gradient(-45deg, #183850 0, #183850 25%, #192C46 50%, #22254C 75%, #22254C 100%);
+    background: -webkit-linear-gradient(-45deg, #183850 0, #183850 25%, #192C46 50%, #22254C 75%, #22254C 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+ul.inline{
+	list-style: none;
+	padding: 0;
+	li{
+		// float: left;
+		display: inline-block;
+	}
+}
