@@ -31,11 +31,11 @@ function isValidEmailAddress(emailAddress) {
 
 // on start sound
 $( document ).ready(function() {
-	// soundstart();
-	// addAlert ("I AM JUST GETTING STARTED...");
-    $(this).delay(3000).queue(function(){
-        // addAlert ("use <key>⬅</key> left arrow to open nav");
-        // addAlert ("press <key>H</key> to open <strong>help menu</strong>");
+    $(this).delay(1000).queue(function(){
+        addAlert ("Welcome to <yellow>OmarHabash.com</yellow>");
+        addAlert ("try using only your keyboard to Navigate.");
+        addAlert ("use <key>⬅</key> left arrow to open nav");
+        $(".hamb").addClass('o1');
     });
 });
 
@@ -49,6 +49,10 @@ $( ".st-menu ul li a" ).click(function() {
 
 function sound1() {
 	$('#sound')[0].play();
+}
+
+function tink() {
+	$('#tink')[0].play();
 }
 
 // function woosh() {
@@ -101,7 +105,7 @@ $(document).ready(function() {
 $("body").keydown(function(e) {
     switch (e.keyCode) {
         case 66:
-            toggleStyle2()
+            // toggleStyle2()
             break;
     }
 });
@@ -163,10 +167,10 @@ function toggleStyle2() {
 	// addAlert('function toggleStyle()...')
     if(!$('#styleToggle').length) {
     	// addAlert('bright.css added');
-        $('head').append('<link href=\"assets/dist/css/bright.css\" id="styleToggle" rel=\"stylesheet\">')
+        // $('head').append('<link href=\"assets/dist/css/bright.css\" id="styleToggle" rel=\"stylesheet\">')
     }else{
     	// addAlert('bright.css removed');
-    	$('head').find('#styleToggle').remove();
+    	// $('head').find('#styleToggle').remove();
     }
 }
 
@@ -220,7 +224,7 @@ function mainNavi(e) {
     switch (e.keyCode) {
         case 37:
             openNavi();
-        	sound1();
+        	tink();
             break;
         case 39:
             closeNavi();
@@ -264,6 +268,7 @@ function carNavi(e) {
         case 13:
             closeNavi();
             addAlert('enter key pressed');
+            $('.detail-btn').trigger("click");
             break;
     }
 }
@@ -313,6 +318,7 @@ var closeNavi = function() {
 };
 
 var Navigate = function(diff) {
+	$('.center-slick').addClass('o0');
     displayBoxIndex += diff;
     var oBoxCollection = $("#main-nav li");
     if (displayBoxIndex >= oBoxCollection.length)

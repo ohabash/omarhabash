@@ -49,6 +49,7 @@ function submitForm(){
         success : function(text){
             if (text == "success"){
                 // formSuccess();
+                tink();
             }
         }
     });

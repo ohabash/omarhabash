@@ -1,3 +1,7 @@
+<style type="text/css">
+	#terminal{display: block !important;}
+</style>
+
 <div class='title00 gone db p0'>Contact</div>
 
 <div class="clearfix">
@@ -214,6 +218,9 @@
 
 
 <script>
+function tink() {
+	$('#tink')[0].play();
+}
 	/*===================== Form WIZARD =====================*/
 	var theForm = document.getElementById( 'theForm' );
 
@@ -224,6 +231,7 @@
 			var messageEl = theForm.querySelector( '.final-message' );
 			messageEl.innerHTML = 'Thank you! I\'ll be in touch.';
 			classie.addClass( messageEl, 'show' );
+			tink();
 		}
 	} );
 

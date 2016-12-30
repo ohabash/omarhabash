@@ -1,48 +1,45 @@
 [
 	{
-		"img":"assets/img/project-01-01.png",
+		"img":"assets/img/projects/project_7.png",
+		"link":"http://methodandmodel.com/",
+		"title":"Method+Model",
+		"desc":"I am 404 on time at the moment. Lorem ipsum Duis cupidatat amet tempor dolor velit pariatur tempor irure ad commodo irure nulla."
+	},
+	{
+		"img":"assets/img/projects/project_1.png",
 		"link":"https://google1.com",
-		"title":"Title1"
+		"title":"Follow Up Letter",
+		"desc":"I am 404 on time at the moment. Lorem ipsum Duis cupidatat amet tempor dolor velit pariatur tempor irure ad commodo irure nulla."
 	},
 	{
-		"img":"assets/img/project-01-02.png",
+		"img":"assets/img/projects/project_2.png",
 		"link":"https://google2.com",
-		"title":"Title2"
+		"title":"Icon Finder",
+		"desc":"I am 404 on time at the moment. Lorem ipsum Duis cupidatat amet tempor dolor velit pariatur tempor irure ad commodo irure nulla."
 	},
 	{
-		"img":"assets/img/project-01-03.png",
-		"link":"https://google3.com",
-		"title":"Title3"
+		"img":"assets/img/projects/project_3.png",
+		"link":"https://omarhabash.com/mac",
+		"title":"OS-X (jQuery)",
+		"desc":"I am 404 on time at the moment. Lorem ipsum Duis cupidatat amet tempor dolor velit pariatur tempor irure ad commodo irure nulla."
 	},
 	{
-		"img":"assets/img/project-01-04.png",
-		"link":"https://google4.com",
-		"title":"Title4"
+		"img":"assets/img/projects/project_4.png",
+		"link":"https://omarhabash.com/mac",
+		"title":"Women of Faith",
+		"desc":"I am 404 on time at the moment. Lorem ipsum Duis cupidatat amet tempor dolor velit pariatur tempor irure ad commodo irure nulla."
 	},
 	{
-		"img":"assets/img/project-01-05.png",
-		"link":"https://google5.com",
-		"title":"Title5"
+		"img":"assets/img/projects/project_5.png",
+		"link":"http://www.promotelovemovement.com/",
+		"title":"Promote Love",
+		"desc":"I am 404 on time at the moment. Lorem ipsum Duis cupidatat amet tempor dolor velit pariatur tempor irure ad commodo irure nulla."
 	},
 	{
-		"img":"assets/img/project-01-06.png",
-		"link":"https://google6.com",
-		"title":"Title6"
-	},
-	{
-		"img":"assets/img/project-01-01.png",
-		"link":"https://google7.com",
-		"title":"Title7"
-	},
-	{
-		"img":"assets/img/project-01-02.png",
-		"link":"https://google8.com",
-		"title":"Title8"
-	},
-	{
-		"img":"assets/img/project-01-03.png",
-		"link":"https://google9.com",
-		"title":"Title9"
+		"img":"assets/img/projects/project_6.png",
+		"link":"https://jsfiddle.net/r1L5ou8m/3",
+		"title":"Terminal Notifications",
+		"desc":"I am 404 on time at the moment. Lorem ipsum Duis cupidatat amet tempor dolor velit pariatur tempor irure ad commodo irure nulla."
 	}
 ]
 

@@ -146,6 +146,10 @@
 	"name":"AngularJS",
 	"id":"31"
 	},{
+	"img":"https://images-na.ssl-images-amazon.com/images/G/01/mobile-apps/dex/L0_bknd_alexa._CB299516724_.png",
+	"name":"Alexa Skills",
+	"id":"31"
+	},{
 	"img":"assets/img/skills/jqm.png",
 	"name":"jQuery Mobile",
 	"id":"32"

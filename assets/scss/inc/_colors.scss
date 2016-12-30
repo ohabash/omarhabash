@@ -1,7 +1,8 @@
 
 $yellow: #fab104;
-$red: red;
+$red: #e64e0d;
 $green: #4baa4b;
+$blue: #2196F3;
 
 	
 .yellow, yellow{
@@ -10,15 +11,24 @@ $green: #4baa4b;
     	color: $yellow;
     }
 }
+
 .red, red{
     color: $red !important;
     a{
     	color: $red;
     }
 }
+
 .green, green{
     color: $green !important;
     a{
-    	color: $green;
+        color: $green;
+    }
+}
+
+.blue, blue{
+    color: $blue !important;
+    a{
+    	color: $blue;
     }
 }

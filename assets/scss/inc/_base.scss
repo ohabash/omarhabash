@@ -8,6 +8,7 @@ body, html {
 body{
 	font-size:17px;
 	@extend .OpenS;
+    @extend .mono;
     background:#000 !important;
 }
 
@@ -24,6 +25,10 @@ key{
     font-weight: bold;
     font-family: monospace;
     padding:3px;
+}
+
+.o1{
+    opacity: 1 !important;
 }
 
 h3 {
@@ -72,6 +77,7 @@ p{
 p.f{
 	text-transform: uppercase;
 	@extend .OpenS;
+    @extend .mono;
 	letter-spacing: 3px;
 	font-weight: bold;
     font-size: 0.9em;
@@ -114,6 +120,7 @@ blockquote::after {
 
 .details{
 	@extend .OpenS;
+    @extend .mono;
 	font-size: 0.8em;
     letter-spacing: 0.05em;
     font-weight: 100;
@@ -240,16 +247,24 @@ iframe svg{display: none !important}
 }
 
 .hamb {
-    background: #fff;
+    // background: #fff;
     position: absolute;
-    top: 40%;
+    top: 38%;
     padding: 1em;
     z-index: 999999;
-    color: $dark;
+    color: $yellow;
     opacity:1;
+    font-size: 2em;
+    opacity: 0;
     @include ease(.7s);
     button{
         opacity: 1 !important;
+    }
+    @include bp(L-phone){
+        top:0;
+        font-size: 1em;
+        left:inherit;
+        right:0;
     }
 }
 .gone {
@@ -261,3 +276,15 @@ iframe svg{display: none !important}
     button{
     }
 }
+
+
+.hide-on-mobile{display: block;}
+.mobile-only{display: none !important;}
+@include bp(L-phone){
+    .hide-on-mobile{display: none !important;}
+    .mobile-only{display: block !important;}
+}
+
+
+
+

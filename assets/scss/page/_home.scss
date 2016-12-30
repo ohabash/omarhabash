@@ -120,13 +120,14 @@ body,
   left: 0;
   z-index: 100;
   visibility: hidden;
-  width: 148px;
+  width: 118px;
   height: 100%;
   background: #9E0D0C;
   background: $dark;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   border-right: 2px solid rgba(44, 70, 80, 0.83);
+  padding-bottom: 20%;
 }
 
 .st-menu::after {
@@ -186,6 +187,7 @@ body,
     font-size: 10px;
     // opacity: 0.6;
     // box-shadow: ;
+    padding-bottom: 1vh;
 }
 
 .st-menu ul li a i {
@@ -304,6 +306,9 @@ body,
 .st-menu ul li a svg {
     max-width: 60%;
     padding-bottom: 1em;
+    @include bp(L-phone){
+      max-width: 44%;
+    }
 }
 
 

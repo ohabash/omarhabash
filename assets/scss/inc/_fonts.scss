@@ -1,9 +1,24 @@
 //================ Font11 ================//
-@include newFont(CenturyGothic);
+@mixin newFont($fontName) {
+	@font-face {
+	    src: url('../fonts/$fontName.eot');
+	    src: url('../fonts/$fontName.eot') format('embedded-opentype'),
+	         url('../fonts/$fontName.woff2') format('woff2'),
+	         url('../fonts/$fontName.woff') format('woff'),
+	         url('../fonts/$fontName.ttf') format('truetype'),
+	         url('../fonts/$fontName.svg#$fontName') format('svg');
+	}
+}
 // mixin// @extend .font11;
-.font11{font-family: 'CenturyGothic', CenturyGothic, AppleGothic, sans-serif;}
-// variable //font-family: $font11;
-$font11: 'ChronicleDeck-Bold';
+@include newFont(DidotLTStd-Roman);
+.didot{
+	font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    margin-bottom: 0;
+    text-transform: inherit;
+    font-weight: 100;
+    letter-spacing: 0.5px;
+}
+$didot: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
 
 
 .OpenS{
@@ -11,4 +26,9 @@ $font11: 'ChronicleDeck-Bold';
 }
 .Raleway{
 	font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+.mono{
+	font-family: 'Roboto Mono', monospace, 'Open Sans', Helvetica, sans-serif;
+	    -webkit-font-smoothing: antialiased;
 }

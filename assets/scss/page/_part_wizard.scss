@@ -34,6 +34,9 @@ div#wizard {
     transform: translateY(-50%) !important;
     left: 0;
     padding: 4em;
+  @include bp(L-phone){
+    padding:1em;
+  }
 }
 // test
 
@@ -174,7 +177,7 @@ div#wizard {
 
 .questions textarea {
     position: relative;
-    height: 7em;
+    height: 240px;
     top: 16px;
     width: 97%;
     color: $green;

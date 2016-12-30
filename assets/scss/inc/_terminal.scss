@@ -1,10 +1,11 @@
 
 
 #terminal span {
-    // font-family: monospace;
+    @extend .mono;
     display: block;
     font-size: 1.4em;
-    letter-spacing:2px;
+    letter-spacing:1px;
+    margin-bottom: 7px;
     @include ani(1s, fadeIn, 0.5s);
     @include delay(0.1s);
     @include bp(M-desktop){

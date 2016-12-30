@@ -41,7 +41,7 @@
 		<li>
 			<a ng-class="{ active0: PAGE('/skills') }"  href="/skills" class="icon icon-photo" href="#">
 				<?php require "icons/skills.php"; ?>
-				<p>skills</p>
+				<p>tools</p>
 			</a>
 		</li>
 

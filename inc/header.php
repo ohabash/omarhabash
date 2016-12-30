@@ -33,6 +33,7 @@
 		<link href="assets/dist/css/bright.css" id="styleToggle" rel="stylesheet">
 		<link href="assets/dist/css/flat.css" id="styleToggle" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Unica+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 
 		
 		<!-- scripts -->
@@ -57,7 +58,7 @@
 	<body onload="startRain()" onclick="launchIntoFullscreen(document.documentElement);">
 
 		<!-- terminal notices -->
-		<div id="terminal"></div>
+		<div id="terminal" class="hide-on-mobile"></div>
 
 		<!-- #help-menu -->
 		<div id="help-menu" class="card-dark">
@@ -82,20 +83,15 @@
 	<!-- Tone1 -->
 	<audio id="sound" volume="0.5" preload="auto" controls style="position: absolute; opacity: 0;">
 	  <source src="assets/sound/tone.wav" type="audio/wav">
+	  <!-- <source src="assets/sound/morse.aiff" type="audio/wav"> -->
 	  <!-- <source src="https://www.freesound.org/data/previews/193/193971_2977451-lq.ogg" type="audio/ogg"> -->
 	</audio>
 
 	<!-- Tone2 -->
-	<audio id="clickTone" volume="0.5" preload="auto" controls style="position: absolute; opacity: 0;">
-	  <source src="assets/sound/click.wav" type="audio/wav">
-	  <source src="assets/sound/click.mp4" type="audio/mp4">
+	<audio id="tink" volume="0.5" preload="auto" controls style="position: absolute; opacity: 0;">
+	  <source src="assets/sound/tink.aiff" type="audio/wav">
 	</audio>
 
-	<!-- Woosh -->
-	<audio id="woosh" volume="0.5" preload="auto" controls style="position: absolute; opacity: 0;">
-	  <source src="assets/sound/woosh.wav" type="audio/wav">
-	  <source src="assets/sound/woosh.mp4" type="audio/mp4">
-	</audio>
 
 	
 	
