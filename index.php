@@ -1,4 +1,4 @@
-test version 9
+test version 10
 
 <?php require"inc/function.php"; ?>
 <?php require"inc/header.php"; ?>
@@ -6,3 +6,5 @@ test version 9
 <?php require"inc/nav.php"; ?>	
 <?php require"inc/access.php"; ?>		
 <?php require"inc/footer.php"; ?>
+
+
