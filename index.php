@@ -1,4 +1,4 @@
-test version 3
+test version 4
 
 <?php require"inc/function.php"; ?>
 <?php require"inc/header.php"; ?>
