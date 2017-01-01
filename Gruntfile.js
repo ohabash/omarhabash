@@ -3,7 +3,6 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
-
     //watch
     watch: {
       sass: {
@@ -11,7 +10,6 @@ module.exports = function(grunt) {
         tasks: ['sass'],
       },
     },
-
 
     // Minify
     cssmin: {
@@ -26,9 +24,6 @@ module.exports = function(grunt) {
       }
     },
 
-
-
-
     // sass
       sass: {
         dist: {
@@ -37,12 +32,6 @@ module.exports = function(grunt) {
           }
         }
       }
-
-
-
-
-
-
   });
 
   grunt.loadNpmTasks('grunt-contrib-cssmin');
