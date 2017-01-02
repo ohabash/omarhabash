@@ -1,4 +1,4 @@
-
+t
 <?php require"inc/function.php"; ?>
 <?php require"inc/header.php"; ?>
 <div class="smoke"></div>
