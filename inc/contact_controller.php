@@ -15,7 +15,7 @@ $EmailTo = "contactOmarnow@gmail.com";
 $Subject = "$nme would like to chat";
 
 $EmailTo1 = $eml;
-$Subject1 = "Thank you for submitting your story on Promote Love";
+$Subject1 = "Thank you: Contact Request to Omar";
  
 
 
