@@ -19,7 +19,31 @@ angular.module('OmarHabash')
         function slicker($scope, $el, $attrs) {
 	        $timeout((function() {
         		addAlert('<green>Project Carousel Initiating...</green>');
-	            
+	            $('.center-slick').slick({
+				  centerMode: true,
+				  centerPadding: '60px',
+				  focusOnSelect: true,
+				  slidesToShow: 5,
+				  cssEase: 'ease',
+				  infinite: false,
+				  waitForAnimate: true,
+				  responsive: [
+				    {
+				      breakpoint: 1600,
+				      settings: {
+				        slidesToShow: 3
+				      }
+				    },{
+				      breakpoint: 480,
+				      settings: {
+				        arrows: false,
+				        centerMode: true,
+				        centerPadding: '40px',
+				        slidesToShow: 1
+				      }
+				    }
+				  ]
+				});
         		$('.center-slick').removeClass('o0');
 	        }), 90)
 	    }slicker();
