@@ -25,8 +25,8 @@ require "thankyou.php";
 // send email & call template
 $success = mail($EmailTo, $Subject, $Body, "From:".$eml);
 $thankyou = mail($EmailTo1, $Subject1, $Body1, "From:".$email1);
-mail($EmailTo, $Subject, $Body, "From:".$eml);
-mail($EmailTo1, $Subject1, $Body1, "From:".$email1);
+$success;
+$thankyou;
 // redirect to success page
 if ($success){
     echo "success";
