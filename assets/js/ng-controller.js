@@ -17,6 +17,7 @@ angular.module('OmarHabash')
           $scope.projects = result.data;                
         });
         function slicker($scope, $el, $attrs) {
+        	addAlert('<green>Project Carousel Initiating...</green>')
 	        $timeout((function() {
 	            $('.center-slick').slick({
 				  centerMode: true,
@@ -32,8 +33,7 @@ angular.module('OmarHabash')
 				      settings: {
 				        slidesToShow: 3
 				      }
-				    },
-				    {
+				    },{
 				      breakpoint: 480,
 				      settings: {
 				        arrows: false,
