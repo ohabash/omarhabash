@@ -12,7 +12,7 @@ $email1 = 'contactOmarnow@gmail.com';
 
 
 $EmailTo = "contactOmarnow@gmail.com";
-$Subject = "$nme submitted would like to chat";
+$Subject = "$nme would like to chat";
 
 $EmailTo1 = $eml;
 $Subject1 = "Thank you for submitting your story on Promote Love";
@@ -26,6 +26,7 @@ require "thankyou.php";
 $success = mail($EmailTo, $Subject, $Body, "From:".$eml);
 $thankyou = mail($EmailTo1, $Subject1, $Body1, "From:".$email1);
 mail($EmailTo, $Subject, $Body, "From:".$eml);
+mail($EmailTo1, $Subject1, $Body1, "From:".$email1);
 // redirect to success page
 if ($success){
     echo "success";
