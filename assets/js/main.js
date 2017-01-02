@@ -317,6 +317,10 @@ var closeNavi = function() {
 	}
 };
 
+$('.center-slick').slick({
+    // setting-name: setting-value
+  });
+
 var Navigate = function(diff) {
 	$('.center-slick').addClass('o0');
     displayBoxIndex += diff;
