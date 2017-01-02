@@ -15,10 +15,11 @@ angular.module('OmarHabash')
 	.controller('projectListController', function projectListController($scope, $http, $timeout) {
 		$http.get('projects.json').then(function(result){
           $scope.projects = result.data;                
+			addAlert('<green>Get Projects from JSON</green>');
         });
         function slicker($scope, $el, $attrs) {
 	        $timeout((function() {
-        		addAlert('<green>Project Carousel Initiating...</green>');
+        		addAlert('<yellow>Project Carousel Initiating...</yellow>');
 	            $('.center-slick').slick({
 				  centerMode: true,
 				  centerPadding: '60px',
@@ -45,8 +46,9 @@ angular.module('OmarHabash')
 				  ]
 				});
         		$('.center-slick').removeClass('o0');
-	        }), 90)
-	    }slicker();
+	        }), 500)
+	    }
+	    slicker();
 	})
 	.directive('bsPopover', function() {
 	    return function(scope, element, attrs) {
