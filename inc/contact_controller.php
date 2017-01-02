@@ -3,9 +3,9 @@
 // $nme = $_POST["nme"];
 // $eml = $_POST["eml"];
 // $msg = $_POST["msg"];
-$nme = "omar111";
+$nme = "omar222";
 $eml = "ContactOmarNow@gmail.com";
-$msg = "the111 msg";
+$msg = "the222 msg";
 $email1 = 'contactOmarnow@gmail.com';
 
 
