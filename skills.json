@@ -148,11 +148,15 @@
 	},{
 	"img":"https://images-na.ssl-images-amazon.com/images/G/01/mobile-apps/dex/L0_bknd_alexa._CB299516724_.png",
 	"name":"Alexa Skills",
-	"id":"31"
+	"id":"32"
 	},{
 	"img":"assets/img/skills/jqm.png",
 	"name":"jQuery Mobile",
-	"id":"32"
+	"id":"33"
+	},{
+	"img":"assets/img/skills/aws.png",
+	"name":"AWS",
+	"id":"34"
 	}
 ]
 

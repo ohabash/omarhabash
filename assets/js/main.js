@@ -339,19 +339,19 @@ function decideBG(logit){
 }                
 
 function startRain() {
-    var image = document.getElementById('background');
-    decideBG("works");
-    image.onload = function() {
-        window.engine = new RainyDay({
-            image: this
-        });
-        window.engine.rain([ 
-            [1, 0, 20], 
-            [3, 4, 2]
-        ], 100);
-    };
-    image.crossOrigin = 'anonymous';
-    image.src = cBg;
+    // var image = document.getElementById('background');
+    // decideBG("works");
+    // image.onload = function() {
+    //     window.engine = new RainyDay({
+    //         image: this
+    //     });
+    //     window.engine.rain([ 
+    //         [1, 0, 20], 
+    //         [3, 4, 2]
+    //     ], 100);
+    // };
+    // image.crossOrigin = 'anonymous';
+    // image.src = cBg;
 }
 
 
