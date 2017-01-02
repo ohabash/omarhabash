@@ -12,7 +12,7 @@ $email1 = 'contactOmarnow@gmail.com';
 
 
 $EmailTo = "contactOmarnow@gmail.com";
-$Subject = "$nme submitted a story";
+$Subject = "$nme submitted would like to chat";
 
 $EmailTo1 = $eml;
 $Subject1 = "Thank you for submitting your story on Promote Love";
