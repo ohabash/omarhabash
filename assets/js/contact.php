@@ -1,19 +1,14 @@
 <?php
-	$name = $_POST["name"];
-	$age = $_POST["age"];
-	$email = $_POST["email"];
-	$email1 = 'promotelovemovement@gmail.com';
-	$q3 = $_POST["q3"];
-	$q4 = $_POST["q4"];
-	$q5 = $_POST["q5"];
-	$q6 = $_POST["q6"];
-	$q7 = $_POST["q7"];
+	$nme = $_POST["nme"];
+	$eml = $_POST["eml"];
+	$msg = $_POST["msg"];
+	$email1 = 'contacomarnow@gmail.com';
 
 
 
 
 $EmailTo = "contactOmarnow@gmail.com";
-$Subject = "$name submitted a story";
+$Subject = "$name submitted a contact request";
 
 $EmailTo1 = $email;
 $Subject1 = "Thank you for submitting your story on Promote Love";

@@ -1,15 +1,15 @@
 <?php
 // prepare email body text
 
-$Body1 .= "Hey there $name!";
+$Body1 .= "Hi $name!";
 $Body1 .= "\n";
 $Body1 .= "\n";
-$Body1 .= "Thanks for submitting your story. I'l be in touch if I have any questions.";
+$Body1 .= "Thanks for submitting a contact request. For a quicker response you may call or text me at 214-470-5176";
 $Body1 .= "\n";
 $Body1 .= "\n";
-$Body1 .= "Thanks!";
+$Body1 .= "Thank You";
 $Body1 .= "\n";
 $Body1 .= "\n";
-$Body1 .= "xo: Steph";
+$Body1 .= "Omar Habash";
 
 

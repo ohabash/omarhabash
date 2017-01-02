@@ -1,18 +1,18 @@
 <?php
 
-$nme = $_POST["nme"];
-$eml = $_POST["eml"];
-$msg = $_POST["msg"];
-// $nme = "nme";
-// $eml = "eml";
-// $msg = "msg";
+// $nme = $_POST["nme"];
+// $eml = $_POST["eml"];
+// $msg = $_POST["msg"];
+$nme = "omar";
+$eml = "eml@eml.com";
+$msg = "the msg";
 $email1 = 'contactOmarnow@gmail.com';
 
 
 
 
 $EmailTo = "contactOmarnow@gmail.com";
-$Subject = "$name submitted a story";
+$Subject = "$nme submitted a story";
 
 $EmailTo1 = $eml;
 $Subject1 = "Thank you for submitting your story on Promote Love";
@@ -33,3 +33,4 @@ if ($success){
     echo "invalid";
 }
 ?>
+
