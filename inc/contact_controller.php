@@ -1,11 +1,11 @@
 <?php
 
-// $nme = $_POST["nme"];
-// $eml = $_POST["eml"];
-// $msg = $_POST["msg"];
-$nme = "omar222";
-$eml = "ContactOmarNow@gmail.com";
-$msg = "the222 msg";
+$nme = $_POST["nme"];
+$eml = $_POST["eml"];
+$msg = $_POST["msg"];
+// $nme = "omar222";
+// $eml = "ContactOmarNow@gmail.com";
+// $msg = "the222 msg";
 $email1 = 'contactOmarnow@gmail.com';
 
 
