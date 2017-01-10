@@ -29,9 +29,9 @@
 		
 		<!-- styles -->
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-		<link href="assets/dist/css/style.css" rel="stylesheet">
-		<link href="assets/dist/css/bright.css" id="styleToggle" rel="stylesheet">
-		<link href="assets/dist/css/flat.css" id="styleToggle" rel="stylesheet">
+		<link href="assets/dist/css/style.min.css" rel="stylesheet">
+		<link href="assets/dist/css/bright.min.css" id="styleToggle" rel="stylesheet">
+		<link href="assets/dist/css/flat.min.css" id="styleToggle" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Unica+One" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 

@@ -9,7 +9,8 @@ angular.module('OmarHabash')
 	})
 	.controller('skillListController', function skillListController($scope, $http) {
 		$http.get('skills.json').then(function(result){
-          $scope.skills = result.data;                
+          $scope.skills = result.data;
+          addAlert('<green>Get Skills from JSON</green>');               
         });
 	})
 	.controller('projectListController', function projectListController($scope, $http, $timeout) {

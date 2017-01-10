@@ -9,7 +9,12 @@ module.exports = function(grunt) {
         files: 'assets/scss/**/*.scss',
         tasks: ['sass'],
       },
+      cssmin: {
+        files: 'assets/dist/css/*.css',
+        tasks: ['cssmin'],
+      },
     },
+
 
     // Minify
     cssmin: {
@@ -18,11 +23,12 @@ module.exports = function(grunt) {
           expand: true,
           cwd: 'assets/dist/css',
           src: ['*.css', '!*.min.css'],
-          dest: 'assets/dist/css',
+          dest: 'assets/dist/css/',
           ext: '.min.css'
         }]
       }
     },
+
 
     // sass
       sass: {
@@ -31,9 +37,21 @@ module.exports = function(grunt) {
             'assets/dist/css/style.css': 'assets/scss/*.scss'
           }
         }
+      },
+
+    //jshint
+     jshint: {
+      files: ['assets/js/main.js'],
+      options: {
+        globals: {
+          jQuery: true
+        }
       }
+    }
+
   });
 
+  grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-sass');

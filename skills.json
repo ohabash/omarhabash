@@ -111,52 +111,56 @@
 	},
 	{
 	"img":"assets/img/skills/app-256.png",
-	"name":"Slack",
+	"name":"Slack API",
 	"id":"23"
+	},{
+	"img":"assets/img/skills/acf.png",
+	"name":"WP-ACF",
+	"id":"24"
 	},{
 	"img":"assets/img/skills/smartsheetLogo-1.png",
 	"name":"SmartSheets",
-	"id":"24"
+	"id":"25"
 	},{
 	"img":"assets/img/skills/php.png",
 	"name":"php",
-	"id":"25"
+	"id":"26"
 	},{
 	"img":"assets/img/skills/python.png",
 	"name":"python",
-	"id":"26"
+	"id":"27"
 	},{
 	"img":"assets/img/skills/shell.png",
 	"name":"Bash/ Shell",
-	"id":"27"
+	"id":"28"
 	},{
 	"img":"assets/img/skills/html-css.png",
 	"name":"HTML/ CSS",
-	"id":"28"
+	"id":"29"
 	},{
 	"img":"assets/img/skills/protoio.jpg",
 	"name":"proto.io",
-	"id":"29"
+	"id":"30"
 	},{
 	"img":"assets/img/skills/jqui.jpg",
 	"name":"jQueryUI",
-	"id":"30"
+	"id":"31"
 	},{
 	"img":"assets/img/skills/ng.png",
 	"name":"AngularJS",
-	"id":"31"
+	"id":"32"
 	},{
 	"img":"https://images-na.ssl-images-amazon.com/images/G/01/mobile-apps/dex/L0_bknd_alexa._CB299516724_.png",
 	"name":"Alexa Skills",
-	"id":"32"
+	"id":"33"
 	},{
 	"img":"assets/img/skills/jqm.png",
 	"name":"jQuery Mobile",
-	"id":"33"
+	"id":"34"
 	},{
 	"img":"assets/img/skills/aws.png",
 	"name":"AWS",
-	"id":"34"
+	"id":"35"
 	}
 ]
 
