@@ -1,4 +1,4 @@
-</div><!-- /st-container (in header)-->		
+</div><!-- /st-container (in header )-->		
 
 
 		<script src="assets/js/ng-controller.js"></script>
